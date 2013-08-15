@@ -17,12 +17,14 @@ namespace StudInfoSys.Infrastructure.Data
 
 
         public EFStudInfoSysContext()
-            : base("DefaultConnection")
+            : this("StudInfoSysDbConnection")
         { }
 
         public EFStudInfoSysContext(string nameOrConnectionString="")
             : base(nameOrConnectionString)
-        { }
+        {
+			Configuration.LazyLoadingEnabled = true;
+		}
 
         //static EFStudInfoSysContext()
         //{

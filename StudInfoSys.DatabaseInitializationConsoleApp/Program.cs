@@ -1,4 +1,5 @@
 ﻿using StudInfoSys.Infrastructure.Data;
+using StudInfoSys.Infrastructure.Data.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,7 +15,8 @@ namespace StudInfoSys.DatabaseInitializationConsoleApp
 		{
             // JBOY: Setting the database initializer will be placed in global.asax in ASP.NET web apps
             // Set database initializer for migration (in code) (or use the <entityFramework><contexts><context> section in App.config
-            // Database.SetInitializer(new MigrateDatabaseToLatestVersion<EFStudInfoSysContext, Configuration>());
+			// NOTE: The Seed method inside the Configuration class will always be called for each database initialization (just comment the Database.SetInitializer() method to prevent the Configuration.Seed() method from being executed the second time)
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<EFStudInfoSysContext, Configuration>());
 
             // JBOY: Use this code to turn off database initialization (impt in production code)
             // (or use the disableDatabaseInitialization="true" attribute in <entityFramework><contexts><context> section in App.config)
