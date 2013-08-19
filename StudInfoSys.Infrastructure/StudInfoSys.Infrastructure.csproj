@@ -45,9 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\EFStudInfoSysContext.cs" />
+    <Compile Include="Data\Mapping\AmountPerUnitMap.cs" />
+    <Compile Include="Data\Mapping\PaymentMap.cs" />
     <Compile Include="Data\Mapping\DegreeMap.cs" />
     <Compile Include="Data\Mapping\RegistrationMap.cs" />
-    <Compile Include="Data\Mapping\SemesterMap.cs" />
     <Compile Include="Data\Mapping\StudentMap.cs" />
     <Compile Include="Data\Mapping\SubjectGradeRecordMap.cs" />
     <Compile Include="Data\Mapping\SubjectMap.cs" />

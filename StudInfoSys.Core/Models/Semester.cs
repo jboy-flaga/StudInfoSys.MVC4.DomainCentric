@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace StudInfoSys.Models
 {
-    public partial class Semester
+    public enum Semester
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+		First = 1,
+		Second,
+		Summer
     }
 }

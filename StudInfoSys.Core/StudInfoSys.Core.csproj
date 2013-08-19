@@ -40,15 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AmountPerUnit.cs" />
     <Compile Include="Models\Degree.cs" />
     <Compile Include="Models\Gender.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\Semester.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Subject.cs" />
-    <Compile Include="Models\SubjectGradeRecord.cs" />
+    <Compile Include="Models\GradeRecord.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Membership.cs" />
     <Compile Include="Models\OAuthMembership.cs" />

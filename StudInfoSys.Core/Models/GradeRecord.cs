@@ -5,7 +5,6 @@ namespace StudInfoSys.Models
 {
     public partial class GradeRecord
     {
-        // public int Id { get; set; }
         public int SubjectId { get; set; }
         public decimal Grade { get; set; }
         public int? RegistrationId { get; set; }

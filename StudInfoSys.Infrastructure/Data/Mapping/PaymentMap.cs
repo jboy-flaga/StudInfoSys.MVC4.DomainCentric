@@ -4,17 +4,17 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace StudInfoSys.Infrastructure.Data.Mapping
 {
-    public class SemesterMap : EntityTypeConfiguration<Semester>
+    public class PaymentMap : EntityTypeConfiguration<Payment>
     {
-        public SemesterMap()
+		public PaymentMap()
         {
             // Primary Key
             this.HasKey(t => t.Id);
 
-            // Properties
-            this.Property(t => t.Name)
-                .IsRequired()
-                .HasMaxLength(50);
+			// Relationships
+			this.HasRequired(t => t.Registration)
+				.WithMany(t => t.Payments)
+				.HasForeignKey(t => t.RegistrationId);
         }
     }
 }

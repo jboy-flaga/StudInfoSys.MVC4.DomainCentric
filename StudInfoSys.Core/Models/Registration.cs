@@ -13,7 +13,6 @@ namespace StudInfoSys.Models
         public int Id { get; set; }
         public int SchoolYearFrom { get; set; }
         public int SchoolYearTo { get; set; }
-        public int SemesterId { get; set; }
         public int DegreeId { get; set; }
         public System.DateTime DateOfRegistration { get; set; }
 
@@ -23,5 +22,8 @@ namespace StudInfoSys.Models
 		public int? StudentId { get; set; }
 
         public virtual ICollection<GradeRecord> GradeRecords { get; set; }
+
+		public virtual ICollection<Payment> Payments { get; set; }
+
     }
 }

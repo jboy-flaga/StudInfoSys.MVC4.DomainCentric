@@ -12,6 +12,8 @@ namespace StudInfoSys.Infrastructure.Data
         public DbSet<Registration> Registrations { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+		public DbSet<AmountPerUnit> AmountPerUnit { get; set; }
+		public DbSet<Payment> Payments { get; set; }
 		// public DbSet<Semester> Semesters { get; set; }
 		public DbSet<User> Users { get; set; }
 
@@ -34,16 +36,17 @@ namespace StudInfoSys.Infrastructure.Data
         //}
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
+		{
+			modelBuilder.Configurations.Add(new AmountPerUnitMap());
 			modelBuilder.Configurations.Add(new DegreeMap());
-			modelBuilder.Configurations.Add(new RegistrationMap());
-			modelBuilder.Configurations.Add(new SemesterMap());
-			modelBuilder.Configurations.Add(new StudentMap());
 			modelBuilder.Configurations.Add(new GradeRecordMap());
+			modelBuilder.Configurations.Add(new PaymentMap());
+			modelBuilder.Configurations.Add(new RegistrationMap());
+			modelBuilder.Configurations.Add(new StudentMap());
 			modelBuilder.Configurations.Add(new SubjectMap());
 			modelBuilder.Configurations.Add(new UserMap());
 
-			//// Add ASP.NET WebPages SimpleSecurity tables
+			// Add ASP.NET WebPages SimpleSecurity tables
 			modelBuilder.Configurations.Add(new MembershipMap());
 			modelBuilder.Configurations.Add(new OAuthMembershipMap());
 			modelBuilder.Configurations.Add(new RolesMap());
