@@ -1,5 +1,5 @@
-﻿using StudInfoSys.Infrastructure.Data;
-using StudInfoSys.Infrastructure.Data.Migrations;
+﻿using StudInfoSys.DatabaseInitialization;
+using StudInfoSys.DatabaseInitialization.Migrations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

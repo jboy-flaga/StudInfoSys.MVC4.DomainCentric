@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace StudInfoSys.Models
+namespace StudInfoSys.Core.Models
 {
     public enum Gender
     {

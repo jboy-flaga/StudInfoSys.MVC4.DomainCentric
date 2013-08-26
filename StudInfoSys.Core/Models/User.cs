@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace StudInfoSys.Models
+namespace StudInfoSys.Core.Models
 {
     public partial class User
     {

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E20A836F-2F4B-48FC-A117-A40AA6548178}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{C99BD2BF-A13D-4218-BF51-5232EF92AEDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StudInfoSys.DatabaseInitializationConsoleApp</RootNamespace>
-    <AssemblyName>StudInfoSys.DatabaseInitializationConsoleApp</AssemblyName>
+    <RootNamespace>StudInfoSys.Infrastructure.Data.Mapping</RootNamespace>
+    <AssemblyName>StudInfoSys.Infrastructure.Data.Mapping</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,17 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AmountPerUnitMap.cs" />
+    <Compile Include="DegreeMap.cs" />
+    <Compile Include="MembershipMap.cs" />
+    <Compile Include="OAuthMembershipMap.cs" />
+    <Compile Include="PaymentMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationMap.cs" />
+    <Compile Include="RolesMap.cs" />
+    <Compile Include="StudentMap.cs" />
+    <Compile Include="SubjectGradeRecordMap.cs" />
+    <Compile Include="SubjectMap.cs" />
+    <Compile Include="UserMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StudInfoSys.DatabaseInitialization\StudInfoSys.DatabaseInitialization.csproj">
-      <Project>{a1a2eefa-8cc0-451c-a2ad-4893eb4cd8da}</Project>
-      <Name>StudInfoSys.DatabaseInitialization</Name>
+    <ProjectReference Include="..\StudInfoSys.Core\StudInfoSys.Core.Models.csproj">
+      <Project>{f54d74b1-7137-4ea6-b262-c874ef01ad23}</Project>
+      <Name>StudInfoSys.Core.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
