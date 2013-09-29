@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1A2EEFA-8CC0-451C-A2AD-4893EB4CD8DA}</ProjectGuid>
+    <ProjectGuid>{C99BD2BF-A13D-4218-BF51-5232EF92AEDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StudInfoSys.DatabaseInitialization</RootNamespace>
-    <AssemblyName>StudInfoSys.DatabaseInitialization</AssemblyName>
+    <RootNamespace>StudInfoSys.Infrastructure.Data.Mapping</RootNamespace>
+    <AssemblyName>StudInfoSys.Infrastructure.Data.Mapping</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,10 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFStudInfoSysContext.cs" />
-    <Compile Include="MigrationConfigurationExecution.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="AmountPerUnitMap.cs" />
+    <Compile Include="DegreeMap.cs" />
+    <Compile Include="MembershipMap.cs" />
+    <Compile Include="OAuthMembershipMap.cs" />
+    <Compile Include="PaymentMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationMap.cs" />
+    <Compile Include="RolesMap.cs" />
+    <Compile Include="StudentMap.cs" />
+    <Compile Include="SubjectGradeRecordMap.cs" />
+    <Compile Include="SubjectMap.cs" />
+    <Compile Include="UserMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,10 +66,6 @@
     <ProjectReference Include="..\StudInfoSys.Core.Models\StudInfoSys.Core.Models.csproj">
       <Project>{f54d74b1-7137-4ea6-b262-c874ef01ad23}</Project>
       <Name>StudInfoSys.Core.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StudInfoSys.Infrastructure.Data.Mapping\StudInfoSys.Infrastructure.Data.Mapping.csproj">
-      <Project>{c99bd2bf-a13d-4218-bf51-5232ef92aedf}</Project>
-      <Name>StudInfoSys.Infrastructure.Data.Mapping</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

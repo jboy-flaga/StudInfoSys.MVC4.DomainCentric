@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("StudInfoSys.Infrastructure")]
+[assembly: AssemblyTitle("StudInfoSys.Infrastructure.Data.RegistrationBoundedContext")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Toshiba")]
-[assembly: AssemblyProduct("StudInfoSys.Infrastructure")]
+[assembly: AssemblyProduct("StudInfoSys.Infrastructure.Data.RegistrationBoundedContext")]
 [assembly: AssemblyCopyright("Copyright © Toshiba 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1de6e016-8a3b-4fca-9a2f-18ef9ed55a15")]
+[assembly: Guid("c7d8e06c-d67d-498e-a80b-6cf78a3b74dc")]
 
 // Version information for an assembly consists of the following four values:
 //

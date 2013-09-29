@@ -2,7 +2,7 @@ using StudInfoSys.Core.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.ModelConfiguration;
 
-namespace StudInfoSys.DatabaseInitialization
+namespace StudInfoSys.Infratructure.Data.Mapping
 {
     public class StudentMap : EntityTypeConfiguration<Student>
     {

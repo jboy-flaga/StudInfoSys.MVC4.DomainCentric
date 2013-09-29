@@ -40,21 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\AmountPerUnit.cs" />
-    <Compile Include="Models\Degree.cs" />
-    <Compile Include="Models\Gender.cs">
+    <Compile Include="AmountPerUnit.cs" />
+    <Compile Include="Degree.cs" />
+    <Compile Include="Gender.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\Payment.cs" />
-    <Compile Include="Models\Registration.cs" />
-    <Compile Include="Models\Semester.cs" />
-    <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\Subject.cs" />
-    <Compile Include="Models\GradeRecord.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\Membership.cs" />
-    <Compile Include="Models\OAuthMembership.cs" />
-    <Compile Include="Models\Role.cs" />
+    <Compile Include="Interfaces\IDeletableEntity.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="Registration.cs" />
+    <Compile Include="Semester.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="GradeRecord.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Membership.cs" />
+    <Compile Include="OAuthMembership.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
